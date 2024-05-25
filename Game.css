@@ -1,0 +1,353 @@
+body {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    background-size: cover;
+    background-image: url("Pics/mbg.png");
+}
+
+#game-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#js_timer {
+    text-align: center;
+}
+
+#timer {
+    background: #fff;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+}
+
+
+
+#players div {
+    font-size: 0;
+}
+
+#dealer {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+#buttonContainer, #darecontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#submit {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#submitBet {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(0vh - 0px);
+    margin-top: 0px;
+}
+
+.content2txt {
+    background-color: rgba(226, 85, 85, 0.4);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(97, 7, 7);
+    width: 80%;
+    max-width: 80%;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#dPotMoney {
+    margin-bottom: 20px;
+}
+
+#Cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#Cards:hover {
+    transition: 0.6s;
+}
+
+#Cards img {
+    height: 175px;
+    width: 125px;
+    margin: 10px;
+}
+
+#Buttons {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.button {
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: bolder;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 15px 30px;
+}
+
+.button:hover {
+    transition: 0.6s;
+    color: #690505;
+    background-color: black;
+}
+
+#race, #betInp, .dare {
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#popup-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#popup-close {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#popup-close:hover {
+    background-color: #45a049;
+}
+
+.Buttons {
+    font-weight: bolder;
+}
+
+#numRacenDares {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    font-size: large;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    opacity: 1;
+}
+
+.placeholder-bg {
+    background-color: #690505;
+}
+
+.dare-item {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: large;
+}
+
+.dare-item label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.dare-item input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.bottom-navbar {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.about-page.fixed-navbar {
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.bottom-navbar-content {
+    margin: 0;
+}
+
+.bottom-navbar-content p {
+    margin: 5px 0;
+}
+
+.bottom-navbar-content a {
+    color: rgb(248, 248, 171);
+    text-decoration: none;
+}
+
+.bottom-navbar-content a:hover {
+    text-decoration: underline;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    z-index: 1000;
+    position: fixed;
+    font-family: "Rye", serif;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5%;
+    padding-right: 20px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    background-color: black;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    margin-left: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-family: "Rye", serif;
+    text-decoration: none;
+    color: rgb(248, 248, 171);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    color: red;
+    content: '';
+    height: 3px;
+    width: 0;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+    color: red;
+    transition: 0.5s;
+}
+
+.navbar img {
+    float: left;
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-left: 0;
+}
+

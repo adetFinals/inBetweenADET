@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>MainProgram</title>
+    <link rel="stylesheet" type="text/css" href="Game.css">
+    <script src="Game.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html"><img src="Pics\Logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="game-container">
+        <div id="players">
+            <div id="player1"><div></div></div>
+            <div id="player2"><div></div></div>   
+            <div id="player3"><div></div></div>
+            <div id="player4"><div></div></div>
+        </div>
+    </div>
+    
+    <div class="content2">
+        <div class="content2txt" id="dealer">
+            <h2 id = "messageDealer">Dealer:</br>Pick between the 2 options below:</h2>
+        </div>
+    </div>
+        <div id="turn">
+            <h1 id="turnOfPlayers"></h1>
+            <h1 id="balance"></h1>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span id="popup-message"></span>
+                <button id="popup-close" onclick="closePopup()">Close</button>
+            </div>
+        </div>
+
+        <div id="Cards"></div>
+
+        <div id="js_timer">
+            <div id="timer" style="display: none">
+            </div>
+        </div>
+        <div id="Buttons">
+            <button id="fold" class="button" style="display: none" onclick="fold()">Fold</button>
+            <button id="draw" class="button" style="display: none;" onclick="draw()">Draw Card</button>
+            <button id="bet" class="button" style="display: none" onclick="bet()">Bet</button>
+            <button id="higher" class="button" style="display: none" onclick="higher()">Higher</button>
+            <button id="lower" class="button" style="display: none" onclick="lower()">Lower</button>
+        </div>
+        <div id="darecontainer">
+            <div id="numRacenDares" style="display: none;">
+                <div class="dare-item">
+                    <label for="dare1">Dare 1:</label>
+                    <input type="text" id="dare1" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare2">Dare 2:</label>
+                    <input type="text" id="dare2" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare3">Dare 3:</label>
+                    <input type="text" id="dare3" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare4">Dare 4:</label>
+                    <input type="text" id="dare4" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare5">Dare 5:</label>
+                    <input type="text" id="dare5" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare6">Dare 6:</label>
+                    <input type="text" id="dare6" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare7">Dare 7:</label>
+                    <input type="text" id="dare7" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare8">Dare 8:</label>
+                    <input type="text" id="dare8" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare9">Dare 9:</label>
+                    <input type="text" id="dare9" class="dare" placeholder="Type Here">
+                </div>
+                <div class="dare-item">
+                    <label for="dare10">Dare 10:</label>
+                    <input type="text" id="dare10" class="dare" placeholder="Type Here">
+                </div>
+            </div> 
+         </div>
+
+            <div id="dares-list" style="display: none;">
+            </div>
+            <button id="submit" class="button" onclick="submitInfo()" style="display: none;">Start Game</button>
+
+        <div id="buttonContainer">
+            <button id="makeDare" class="button" onclick="dareMake()">Make Dares?</button>
+            <button id="generateDares" class="button" onclick="genDare()">Genarate Dares?</button>
+        </div>
+
+    </div>
+
+        <div id="bet"> 
+            <button id="submitBet" class="button" style= "display: none" onclick="betSubmit()">Submit</button>
+        </div>  
+    </div>
+
+    <div id="GameIsOver">
+        <h1 id="thatsGame"></h1>
+        <h3 id="playerDisp1"></h3>
+        <h3 id="playerDisp2"></h3>
+        <h3 id="playerDisp3"></h3>
+        <h3 id="playerDisp4"></h3>
+        <h1 id="Dares"></h1>
+        <h3 id="playerDare1"></h3>
+        <h3 id="playerDare2"></h3>
+        <h3 id="playerDare3"></h3>
+        <h3 id="playerDare4"></h3>
+    </div>
+    <button id="newGame" class="button" onclick="newGame()" style="display: none;">New Game?</button>
+    <p id="results"></p>
+</body>
+</html>
